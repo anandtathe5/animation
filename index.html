@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Tech Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            cursor: pointer;
+            text-align: center;
+            margin-top: 0;
+            color: #007bff;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        h2, h3 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pageTitle">Animation.Anand </h1>
+
+    <label for="animationSelect">Select Animation:</label>
+    <select id="animationSelect" onchange="applySelectedAnimation()">
+        <option value="">Select Animation</option>
+        <optgroup label="Attention Seekers">
+            <option value="bounce">Bounce</option>
+            <option value="flash">Flash</option>
+            <option value="bounce">Bounce</option>
+<option value="flash">Flash</option>
+<option value="pulse">Pulse</option>
+<option value="rubberBand">RubberBand</option>
+<option value="shakeX">ShakeX</option>
+<option value="shakeY">ShakeY</option>
+<option value="headShake">HeadShake</option>
+<option value="swing">Swing</option>
+<option value="tada">Tada</option>
+<option value="wobble">Wobble</option>
+<option value="jello">Jello</option>
+<option value="heartBeat">HeartBeat</option>
+<option value="backInDown">BackInDown</option>
+<option value="backInLeft">BackInLeft</option>
+<option value="backInRight">BackInRight</option>
+<option value="backInUp">BackInUp</option>
+<option value="backOutDown">BackOutDown</option>
+<option value="backOutLeft">BackOutLeft</option>
+<option value="backOutRight">BackOutRight</option>
+<option value="backOutUp">BackOutUp</option>
+<option value="bounceIn">BounceIn</option>
+<option value="bounceInDown">BounceInDown</option>
+<option value="bounceInLeft">BounceInLeft</option>
+<option value="bounceInRight">BounceInRight</option>
+<option value="bounceInUp">BounceInUp</option>
+<option value="bounceOut">BounceOut</option>
+<option value="bounceOutDown">BounceOutDown</option>
+<option value="bounceOutLeft">BounceOutLeft</option>
+<option value="bounceOutRight">BounceOutRight</option>
+<option value="bounceOutUp">BounceOutUp</option>
+<option value="fadeIn">FadeIn</option>
+<option value="fadeInDown">FadeInDown</option>
+<option value="fadeInDownBig">FadeInDownBig</option>
+<option value="fadeInLeft">FadeInLeft</option>
+<option value="fadeInLeftBig">FadeInLeftBig</option>
+<option value="fadeInRight">FadeInRight</option>
+<option value="fadeInRightBig">FadeInRightBig</option>
+<option value="fadeInUp">FadeInUp</option>
+<option value="fadeInUpBig">FadeInUpBig</option>
+<option value="fadeInTopLeft">FadeInTopLeft</option>
+<option value="fadeInTopRight">FadeInTopRight</option>
+<option value="fadeInBottomLeft">FadeInBottomLeft</option>
+<option value="fadeInBottomRight">FadeInBottomRight</option>
+<option value="fadeOut">FadeOut</option>
+<option value="fadeOutDown">FadeOutDown</option>
+<option value="fadeOutDownBig">FadeOutDownBig</option>
+<option value="fadeOutLeft">FadeOutLeft</option>
+<option value="fadeOutLeftBig">FadeOutLeftBig</option>
+<option value="fadeOutRight">FadeOutRight</option>
+<option value="fadeOutRightBig">FadeOutRightBig</option>
+<option value="fadeOutUp">FadeOutUp</option>
+<option value="fadeOutUpBig">FadeOutUpBig</option>
+<option value="fadeOutTopLeft">FadeOutTopLeft</option>
+<option value="fadeOutTopRight">FadeOutTopRight</option>
+<option value="fadeOutBottomRight">FadeOutBottomRight</option>
+<option value="fadeOutBottomLeft">FadeOutBottomLeft</option>
+<option value="flip">Flip</option>
+<option value="flipInX">FlipInX</option>
+<option value="flipInY">FlipInY</option>
+<option value="flipOutX">FlipOutX</option>
+<option value="flipOutY">FlipOutY</option>
+<option value="lightSpeedInRight">LightSpeedInRight</option>
+<option value="lightSpeedInLeft">LightSpeedInLeft</option>
+<option value="lightSpeedOutRight">LightSpeedOutRight</option>
+<option value="lightSpeedOutLeft">LightSpeedOutLeft</option>
+<option value="rotateIn">RotateIn</option>
+<option value="rotateInDownLeft">RotateInDownLeft</option>
+<option value="rotateInDownRight">RotateInDownRight</option>
+<option value="rotateInUpLeft">RotateInUpLeft</option>
+<option value="rotateInUpRight">RotateInUpRight</option>
+<option value="rotateOut">RotateOut</option>
+<option value="rotateOutDownLeft">RotateOutDownLeft</option>
+<option value="rotateOutDownRight">RotateOutDownRight</option>
+<option value="rotateOutUpLeft">RotateOutUpLeft</option>
+<option value="rotateOutUpRight">RotateOutUpRight</option>
+<option value="hinge">Hinge</option>
+<option value="jackInTheBox">JackInTheBox</option>
+<option value="rollIn">RollIn</option>
+<option value="rollOut">RollOut</option>
+<option value="zoomIn">ZoomIn</option>
+<option value="zoomInDown">ZoomInDown</option>
+<option value="zoomInLeft">ZoomInLeft</option>
+<option value="zoomInRight">ZoomInRight</option>
+<option value="zoomInUp">ZoomInUp</option>
+<option value="zoomOut">ZoomOut</option>
+<option value="zoomOutDown">ZoomOutDown</option>
+<option value="zoomOutLeft">ZoomOutLeft</option>
+<option value="zoomOutRight">ZoomOutRight</option>
+<option value="zoomOutUp">ZoomOutUp</option>
+<option value="slideInDown">SlideInDown</option>
+<option value="slideInLeft">SlideInLeft</option>
+<option value="slideInRight">SlideInRight</option>
+<option value="slideInUp">SlideInUp</option>
+<option value="slideOutDown">SlideOutDown</option>
+<option value="slideOutLeft">SlideOutLeft</option>
+<option value="slideOutRight">SlideOutRight</option>
+<option value="slideOutUp">SlideOutUp</option>
+
+            <!-- Add more options for other animations in this category -->
+        </optgroup>
+        <optgroup label="Back Entrances">
+            <option value="backInDown">BackInDown</option>
+            <option value="backInLeft">BackInLeft</option>
+            <!-- Add more options for other animations in this category -->
+        </optgroup>
+        <!-- Add more optgroups for other animation categories -->
+    </select>
+
+    <script>
+        // Function to remove all animation classes from the element
+        function removeAnimationClasses() {
+            var pageTitle = document.getElementById("pageTitle");
+            pageTitle.classList.remove("animate__animated",
+                                        "animate__bounce",
+                                        "animate__flash",
+                                        // Add more animation classes here
+                                        );
+        }
+
+        // Function to apply the selected animation class to the element
+        function applySelectedAnimation() {
+            var animationSelect = document.getElementById("animationSelect");
+            var selectedAnimation = animationSelect.value;
+            var pageTitle = document.getElementById("pageTitle");
+            removeAnimationClasses();
+            if (selectedAnimation) {
+                pageTitle.classList.add("animate__animated", "animate__" + selectedAnimation);
+                // Remove the animation class after the animation completes
+                setTimeout(function() {
+                    pageTitle.classList.remove("animate__" + selectedAnimation);
+                }, 1000); // Adjust the timing based on the duration of the animation
+            }
+        }
+    </script>
+      <p>Mastering CSS Animation: Bringing Your Web Pages to Life</p>
+      <p>In the dynamic landscape of web design, CSS animation has become an indispensable tool for creating engaging and interactive user experiences. From subtle transitions to eye-catching effects, CSS animation empowers developers to breathe life into static web pages. In this article, we'll delve into the fundamentals of CSS animation and explore how it can elevate your web design projects.</p>
+
+      <h2>Understanding CSS Animation</h2>
+      <p>CSS animation allows developers to animate elements without relying on JavaScript or external plugins. It leverages keyframes and transitions to define the motion of elements on a web page. With CSS animation, you can control properties such as position, size, color, and opacity over a specified duration, creating visually stunning effects that captivate users.</p>
+
+      <h2>Getting Started with CSS Animation</h2>
+      <p>To incorporate CSS animation into your web projects, you need a basic understanding of keyframe animations and transitions.</p>
+
+      <h3>Keyframe Animations</h3>
+      <p>Keyframe animations enable you to define a sequence of styles that an element should exhibit during an animation. By specifying keyframes at various points in the animation timeline, you can create fluid motion effects.</p>
+
+      <h3>Transitions</h3>
+      <p>Transitions allow for smooth changes in CSS property values over a specified duration. They are commonly used for hover effects and state changes.</p>
+
+      <h2>Enhancing User Experience with CSS Animation</h2>
+      <p>CSS animation goes beyond mere visual appeal; it enhances user experience by providing feedback, guiding navigation, and conveying information.</p>
+
+      <h2>Best Practices for CSS Animation</h2>
+      <p>While CSS animation offers endless creative possibilities, it's essential to follow best practices to ensure optimal performance and accessibility.</p>
+
+      <h2>Conclusion</h2>
+      <p>CSS animation empowers web developers to create visually stunning and interactive web experiences. By mastering the principles of CSS animation and applying best practices, you can elevate your web design projects and delight users with engaging animations. Experiment with different techniques, unleash your creativity, and let CSS animation breathe life into your web pages. Happy animating!</p>
+  </div>
+
+  <script>
+      // Function to remove all animation classes from the element
+      function removeAnimationClasses() {
+          var pageTitle = document.getElementById("pageTitle");
+          pageTitle.classList.remove("animate__animated",
+                                      "animate__bounce",
+                                      "animate__flash",
+                                      // Add more animation classes here
+                                      );
+      }
+
+      // Function to apply the selected animation class to the element
+      function applySelectedAnimation() {
+          var animationSelect = document.getElementById("animationSelect");
+          var selectedAnimation = animationSelect.value;
+          var pageTitle = document.getElementById("pageTitle");
+          removeAnimationClasses();
+          if (selectedAnimation) {
+              pageTitle.classList.add("animate__animated", "animate__" + selectedAnimation);
+              // Remove the animation class after the animation completes
+              setTimeout(function() {
+                  pageTitle.classList.remove("animate__" + selectedAnimation);
+              }, 1000); // Adjust the timing based on the duration of the animation
+          }
+      }
+  </script>
+  </body>
+</html>
