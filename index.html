@@ -58,11 +58,53 @@
         h2, h3 {
             color: #007bff;
         }
+        /* CSS for select options to grab users' attention */
+
+/* Highlight the select element */
+#animationSelect {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #007bff; /* Change border color to a vibrant one */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Style for the options dropdown */
+#animationSelect option {
+    font-size: 16px;
+    background-color: #f9f9f9; /* Match background color with select */
+    color: #333;
+}
+
+/* Hover effect for options */
+#animationSelect option:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Focus effect for the select element */
+#animationSelect:focus {
+    border-color: #ff5722; /* Change border color on focus */
+}
+
+/* Animation select label style */
+label[for="animationSelect"] {
+    font-weight: bold;
+    font-size: 20px;
+    color: #007bff; /* Match color with select border */
+}
+
     </style>
 </head>
 <body>
     <h1 id="pageTitle">Animation.Anand </h1>
-
+  <img src="100.webp" alt="Image Description">
     <label for="animationSelect">Select Animation:</label>
     <select id="animationSelect" onchange="applySelectedAnimation()">
         <option value="">Select Animation</option>
@@ -166,6 +208,9 @@
 <option value="slideOutLeft">SlideOutLeft</option>
 <option value="slideOutRight">SlideOutRight</option>
 <option value="slideOutUp">SlideOutUp</option>
+
+
+<br><br><br><br><br>
 
             <!-- Add more options for other animations in this category -->
         </optgroup>
